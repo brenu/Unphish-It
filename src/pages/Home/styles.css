@@ -1,0 +1,52 @@
+#search-input-container {
+    position: relative;
+}
+
+#search-input-container button {
+    position: absolute;
+    top: calc(3rem - 1.25rem);
+    right: 2rem;
+
+    background: transparent;
+    border: 0;
+    padding: 0;
+
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+#search-input-container button:hover {
+    opacity: 0.8;
+}
+
+form {
+    position: relative;
+}
+
+form label {
+    position: absolute;
+    opacity: 0;
+    user-select: none;
+}
+
+form input {
+    width: 41.6rem;
+    height: 6.1rem;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    background: #3398ae;
+    border: 0;
+    border-radius: 0.8rem;
+    padding: 0 2rem 0 2rem;
+}
+
+form input::placeholder {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 7rem;
+    color: #FFF;
+    user-select: none;
+    margin-top: 0;
+}
