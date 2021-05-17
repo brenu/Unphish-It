@@ -19,3 +19,9 @@ body {
     font-size: 62.5%;
   }
 }
+
+@media (min-width: 2700px) {
+  html {
+    font-size: 80%;
+  }
+}

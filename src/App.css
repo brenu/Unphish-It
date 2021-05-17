@@ -1,17 +1,24 @@
 .App {
   background: #007E9A;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .container {
-  height: 100%;
+  max-width: 95vw;
+  width: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-start;
 }
 
-.container.center {
+.center {
   justify-content: center;
+  align-items: center;
 }

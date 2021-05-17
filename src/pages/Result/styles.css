@@ -1,0 +1,145 @@
+.content-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.content-header button {
+    background: transparent;
+    border: 0;
+
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.content-header button:hover {
+    opacity: 0.8;
+}
+
+.content-row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content-row > svg {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.content-row > h1 {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.spin {
+    animation: spin 1.5s infinite linear;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#main-content table tr th {
+    width: 100%;
+    color: #FFF;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 2.2rem 0;
+}
+
+#main-content table tr td {
+    max-width: 40rem;
+    width: 100%;
+    color: #FFF;
+    font-size: 2rem;
+    padding: 1.1rem 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#main-content table tr td:last-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+#main-content table tr td.alert {
+    color: #FFA841;
+}
+
+#main-content table tr td.critical {
+    color: #FF4C41;
+}
+
+.side-content {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: #389AB0;
+    max-width: 36rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+}
+
+.side-content-item {
+    color: #FFF;
+    font-size: 2rem;
+    padding: 1.6rem;
+    border-bottom: 2px solid #007E9A;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.side-content-item span {
+    text-align: center;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h1#results-title {
+    font-size: 4rem;
+}
+
+h2 {
+    text-align: center;
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@media(min-width: 1100px) {
+    .side-content {
+        display: flex;
+    }
+}
